@@ -1,0 +1,14 @@
+Reemplaza/agrega en esta carpeta:
+intro.mp4
+intro-poster.jpg
+musica.mp3
+portada.jpg
+madrina.jpg
+foto1.jpg
+foto2.jpg
+foto3.jpg
+foto4.jpg
+video-recuerdo.mp4
+video-poster.jpg
+final.jpg
+preview.jpg

@@ -1,0 +1,47 @@
+INVITACIÓN - MI BAUTIZO Y 5 AÑOS DE ILIANA
+
+Archivos principales:
+- index.html
+- styles.css
+- script.js
+- carpeta img/
+
+COLOCA TUS ARCHIVOS EN img/ CON ESTOS NOMBRES:
+
+1. intro.mp4            -> video que aparece al inicio
+2. intro-poster.jpg     -> imagen de portada del video (opcional)
+3. musica.mp3           -> música después del video
+4. portada.jpg          -> foto principal de Iliana
+5. madrina.jpg          -> foto de la madrina
+6. foto1.jpg            -> carrusel
+7. foto2.jpg            -> carrusel
+8. foto3.jpg            -> carrusel
+9. foto4.jpg            -> carrusel
+10. video-recuerdo.mp4  -> video secundario opcional
+11. video-poster.jpg    -> portada del video secundario
+12. final.jpg           -> foto final
+13. preview.jpg         -> vista previa al compartir en WhatsApp/Facebook
+
+IMPORTANTE SOBRE EL VIDEO DE INICIO:
+- Arranca sin sonido por restricciones de los navegadores.
+- Al tocar la pantalla se activa el audio del video.
+- Al terminar o tocar “Saltar video”, el video se PAUSA y se SILENCIA.
+- Después intenta comenzar musica.mp3.
+- Así NO se mezclan el audio del video y la música de la invitación.
+
+DATOS QUE PUEDES CAMBIAR EN script.js:
+- eventDate
+- venueMaps
+- whatsapp
+
+Actualmente está configurado:
+- Iliana Sánchez
+- Mi Bautizo y 5 Años
+- Domingo 15 de noviembre de 2026
+- 3:00 p. m.
+- Salón “Cenzontle”
+- Campo Militar No. 1-A, Gral. Div. Álvaro Obregón, CDMX
+- Madrina: Elizabeth Montiel Roldán
+
+Nota:
+No agregué dirección de iglesia porque la información indica que la misa será familiar y que en la invitación solo se mostrará la ubicación del salón.

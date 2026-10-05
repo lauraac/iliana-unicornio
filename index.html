@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#7d56b3" />
+
+  <title>Mi Bautizo y 5 Años · Iliana Sánchez</title>
+  <meta name="description" content="Acompáñanos a celebrar el bautizo y los 5 años de Iliana Sánchez en una tarde llena de magia." />
+
+  <!-- CAMBIA ESTAS URL CUANDO LO SUBAS A GITHUB PAGES -->
+  <meta property="og:title" content="Mi Bautizo y 5 Años · Iliana Sánchez 🦄💜" />
+  <meta property="og:description" content="Acompáñanos a vivir una tarde mágica y muy especial." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./img/preview.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- =====================================================
+       VIDEO DE INTRODUCCIÓN
+       Reemplaza: img/intro.mp4
+       Opcional: img/intro-poster.jpg
+       ===================================================== -->
+  <section class="intro" id="intro" aria-label="Video de bienvenida">
+    <video id="introVideo" class="intro-video" playsinline muted autoplay preload="auto" poster="./img/intro-poster.jpg">
+      <source src="./img/intro.mp4" type="video/mp4" />
+    </video>
+
+    <div class="intro-overlay"></div>
+
+<div class="intro-copy" id="introCopy">
+  <span class="intro-kicker">Una celebración muy especial</span>
+  <h1>Iliana</h1>
+  <p>Mi Bautizo &amp; 5 Años</p>
+</div>
+
+    <button id="soundBtn" class="sound-btn" type="button" aria-label="Activar sonido del video">
+      <span>♫</span> Toca para escuchar
+    </button>
+
+    <button id="skipIntroBtn" class="skip-btn" type="button">
+      Saltar video <span>›</span>
+    </button>
+  </section>
+
+  <!-- Música de la invitación. Reemplaza img/musica.mp3 si deseas. -->
+  <audio id="bgMusic" loop preload="none">
+    <source src="./img/musica.mp3" type="audio/mpeg" />
+  </audio>
+  <button class="music-btn" id="musicBtn" type="button" aria-label="Reproducir o pausar música">♪</button>
+
+  <div class="floating-sparkles" id="sparkles" aria-hidden="true"></div>
+
+  <main class="page-shell" id="mainContent">
+    <!-- PORTADA: reemplaza img/portada.jpg -->
+    <section class="hero reveal" id="inicio">
+      <div class="hero-media placeholder" data-placeholder="Coloca aquí img/portada.jpg">
+        <img src="./img/1.png" alt="Iliana" onerror="this.remove()" />
+        <div class="placeholder-copy">
+          <span>🦄</span>
+          <strong>FOTO PRINCIPAL</strong>
+          <small>img/portada.jpg</small>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <span class="mini-stars">✦ ✧ ✦</span>
+        <p class="eyebrow">Con mucha ilusión te invito a celebrar</p>
+        <h2>Mi Bautizo<br><span>&amp; 5 Años</span></h2>
+        <h3>Iliana Sánchez</h3>
+        <p class="hero-phrase">Un día lleno de bendiciones, sonrisas y un poquito de magia.</p>
+
+        <div class="date-card">
+          <span class="date-day">15</span>
+          <div>
+            <strong>Noviembre</strong>
+            <small>Domingo · 2026</small>
+          </div>
+        </div>
+
+        <a class="btn btn-primary" href="#detalles">Ver detalles</a>
+      </div>
+    </section>
+
+    <!-- FRASE -->
+    <section class="section reveal blessing">
+      <div class="unicorn-mark">🦄</div>
+      <p class="eyebrow">Un momento para recordar</p>
+      <h2 class="section-title">Una tarde mágica está por comenzar</h2>
+      <p class="section-copy">
+        Hoy mi corazón se llena de alegría porque celebro dos momentos muy importantes:
+        la bendición de mi bautizo y la magia de cumplir 5 años.
+      </p>
+    </section>
+
+    <!-- MADRINA -->
+    <section class="section reveal" id="madrina">
+      <p class="eyebrow">Con cariño especial</p>
+      <h2 class="section-title">Mi Madrina</h2>
+
+      <div class="portrait placeholder" data-placeholder="Coloca aquí img/madrina.jpg">
+        <img src="./img/madrina.jpg" alt="Madrina de Iliana" onerror="this.remove()" />
+        <div class="placeholder-copy">
+          <span>💜</span>
+          <strong>FOTO DE LA MADRINA</strong>
+          <small>img/madrina.jpg</small>
+        </div>
+      </div>
+
+      <p class="special-name">Elizabeth Montiel Roldán</p>
+      <p class="section-copy small-copy">Gracias por acompañarme en este día tan especial.</p>
+    </section>
+
+    <!-- CUENTA REGRESIVA -->
+    <section class="section reveal countdown-section">
+      <p class="eyebrow">Cada vez falta menos</p>
+      <h2 class="section-title">Cuenta regresiva</h2>
+      <p class="event-date">Domingo 15 de noviembre de 2026 · 3:00 p. m.</p>
+
+      <div class="countdown">
+        <div class="countdown-box"><span id="days">00</span><small>Días</small></div>
+        <div class="countdown-box"><span id="hours">00</span><small>Horas</small></div>
+        <div class="countdown-box"><span id="minutes">00</span><small>Min</small></div>
+        <div class="countdown-box"><span id="seconds">00</span><small>Seg</small></div>
+      </div>
+    </section>
+
+    <section class="section reveal detalles-fondo" id="detalles">
+  <p class="eyebrow">Te esperamos para festejar</p>
+  <h2 class="section-title">Celebración</h2>
+
+  <div class="detail-card">
+    <div class="detail-icon">🏰</div>
+    <div>
+      <small>LUGAR</small>
+      <strong>Salón “Cenzontle”</strong>
+      <p>Campo Militar No. 1-A,<br>Gral. Div. Álvaro Obregón, CDMX</p>
+    </div>
+  </div>
+
+  <div class="detail-card">
+    <div class="detail-icon">🕒</div>
+    <div>
+      <small>HORA</small>
+      <strong>3:00 p. m.</strong>
+      <p>Comenzamos la celebración a las 15:00 hrs.</p>
+    </div>
+  </div>
+
+  <a
+    id="venueMaps"
+    class="btn btn-outline"
+    href="#"
+    target="_blank"
+    rel="noopener">
+    Cómo llegar
+  </a>
+</section>
+    <!-- GALERÍA -->
+    <section class="section reveal gallery-section">
+      <p class="eyebrow">Pequeños momentos, grandes recuerdos</p>
+      <h2 class="section-title">Mis fotos</h2>
+
+      <div class="carousel" id="carousel">
+        <div class="carousel-track" id="track">
+          <figure class="slide placeholder">
+            <img src="./img/foto1.jpg" alt="Foto 1 de Iliana" onerror="this.remove()" />
+            <div class="placeholder-copy"><span>📷</span><strong>FOTO 1</strong><small>img/foto1.jpg</small></div>
+          </figure>
+          <figure class="slide placeholder">
+            <img src="./img/foto2.jpg" alt="Foto 2 de Iliana" onerror="this.remove()" />
+            <div class="placeholder-copy"><span>📷</span><strong>FOTO 2</strong><small>img/foto2.jpg</small></div>
+          </figure>
+          <figure class="slide placeholder">
+            <img src="./img/foto3.jpg" alt="Foto 3 de Iliana" onerror="this.remove()" />
+            <div class="placeholder-copy"><span>📷</span><strong>FOTO 3</strong><small>img/foto3.jpg</small></div>
+          </figure>
+          <figure class="slide placeholder">
+            <img src="./img/foto4.jpg" alt="Foto 4 de Iliana" onerror="this.remove()" />
+            <div class="placeholder-copy"><span>📷</span><strong>FOTO 4</strong><small>img/foto4.jpg</small></div>
+          </figure>
+        </div>
+
+        <button class="carousel-btn prev" id="prevBtn" type="button" aria-label="Foto anterior">‹</button>
+        <button class="carousel-btn next" id="nextBtn" type="button" aria-label="Foto siguiente">›</button>
+      </div>
+      <div class="dots" id="dots"></div>
+    </section>
+
+<!-- VIDEO SECUNDARIO -->
+<section class="section reveal">
+  <p class="eyebrow">Un recuerdo especial</p>
+  <h2 class="section-title">Mi video</h2>
+
+  <div class="video-placeholder">
+    <video
+      id="memoryVideo"
+      controls
+      playsinline
+      preload="metadata"
+      poster="./img/video-poster.jpg"
+    >
+      <source src="./img/video-recuerdo.mp4" type="video/mp4" />
+    </video>
+  </div>
+</section>
+
+    <!-- CONFIRMACIÓN -->
+    <section class="section reveal" id="confirmacion">
+      <p class="eyebrow">Queremos compartir este momento contigo</p>
+      <h2 class="section-title">Confirma tu asistencia</h2>
+      <p class="section-copy">Ven a vivir con nosotros una tarde llena de magia, alegría y momentos inolvidables.</p>
+      <button id="confirmWhatsappBtn" class="btn btn-primary full" type="button">Confirmar por WhatsApp</button>
+      <p class="form-msg" id="formMsg"></p>
+    </section>
+
+    <!-- CIERRE -->
+    <section class="finale reveal">
+      <div class="finale-media placeholder">
+        <img src="./img/portada.jpg" alt="Iliana" onerror="this.remove()" />
+        <div class="placeholder-copy">
+          <span>✨</span>
+          <strong>IMAGEN FINAL</strong>
+          <small>img/final.jpg</small>
+        </div>
+      </div>
+      <div class="finale-copy">
+        <span>🦄</span>
+        <p>Gracias por ser parte de mi historia</p>
+        <h2>Iliana</h2>
+        <strong>Mi Bautizo &amp; 5 Años</strong>
+      </div>
+    </section>
+  </main>
+
+  <!-- VISOR DE FOTOS -->
+  <div class="lightbox" id="photoLightbox" aria-hidden="true">
+    <button class="lightbox-close" id="photoLightboxClose" type="button" aria-label="Cerrar">×</button>
+    <img id="photoLightboxImage" alt="Foto ampliada" />
+  </div>
+</body>
+</html>
