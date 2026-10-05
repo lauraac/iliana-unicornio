@@ -5,13 +5,11 @@ const CONFIG = {
   displayTime: '3:00 p. m.',
 
   venueName: 'Salón “Cenzontle”',
-  venueAddress: 'Campo Militar No. 1-A, Gral. Div. Álvaro Obregón, CDMX',
 
-  // PEGA AQUÍ EL LINK REAL DE GOOGLE MAPS DEL SALÓN.
-  venueMaps: '',
+  venueAddress: 'Ubicación en Google Maps',
 
-  // PEGA AQUÍ EL NÚMERO PARA CONFIRMAR, con lada y país, solo números.
-  // Ejemplo México: 525512345678
+venueMaps: 'https://maps.app.goo.gl/kjkdStXxbnDqjzra8?g_st=aw',
+
   whatsapp: '525547078385'
 };
 
